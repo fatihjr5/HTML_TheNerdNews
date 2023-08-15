@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600:700&display=swap');
+// Global
+* {
+    font-family: 'Cormorant Garamond';
+}
+// margin, padding custom
+.mt-10 {
+    margin-top: 4.5rem;
+}
+// components using class
+.navs {
+    border-bottom: 1px solid #e3e6f0;
+    position: fixed;
+    top: 0;
+    background-color: #ffff;
+    width: 100%;
+    z-index: 100;
+}
+.navs-bottom {
+    border-top: 1px solid #e3e6f0;
+    position: fixed;
+    bottom: 0;
+    background-color: #ffff;
+    width: 100%;
+    z-index: 100;
+}
+.img-slider {
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offcanvas {
+    .offcanvas-title  {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    .offcanvas-body  {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: .5rem;
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        a:hover {
+            color: #FF0074;
+            font-weight: 500;
+            transition: 1s ease-in linear;
+        }
+    }
+}
+
+.content {
+    margin-bottom: 1rem;
+    border-bottom: 1px dashed #e3e6f0;
+    padding-bottom: .5rem;
+    .bg-author {
+        background: #FF0074;
+    }
+    .content-image {
+        max-width: 100%;
+    }
+    .content-date {
+        color: #c0c0c0;
+    }
+    .content-title {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .content-text {
+        font-size: 16px;
+        font-weight: 400;
+        color: #c0c0c0;
+    }
+    .content-url {
+        font-size: 16px;
+        font-weight: 400;
+        color: #c0c0c0;
+    }
+    .content-url:hover {
+        color: #FF0074;
+        font-weight: 500;
+        transition: 1s ease-in linear;
+    }
+}
+
+.news-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+// components using id
+#wsjInfo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    #wsjInfo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (min-width: 991px) {
+    #wsjInfo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600:700&display=swap");
+* {
+  font-family: "Cormorant Garamond";
+}
+
+.mt-10 {
+  margin-top: 4.5rem;
+}
+
+.navs {
+  border-bottom: 1px solid #e3e6f0;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+}
+
+.navs-bottom {
+  border-top: 1px solid #e3e6f0;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 100;
+}
+
+.img-slider {
+  height: 35rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.offcanvas .offcanvas-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+.offcanvas .offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+.offcanvas .offcanvas-body a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+}
+.offcanvas .offcanvas-body a:hover {
+  color: #FF0074;
+  font-weight: 500;
+  transition: 1s ease-in linear;
+}
+
+.content {
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #e3e6f0;
+  padding-bottom: 0.5rem;
+}
+.content .bg-author {
+  background: #FF0074;
+}
+.content .content-image {
+  max-width: 100%;
+}
+.content .content-date {
+  color: #c0c0c0;
+}
+.content .content-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.content .content-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c0c0c0;
+}
+.content .content-url {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c0c0c0;
+}
+.content .content-url:hover {
+  color: #FF0074;
+  font-weight: 500;
+  transition: 1s ease-in linear;
+}
+
+.news-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#wsjInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  #wsjInfo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 991px) {
+  #wsjInfo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
